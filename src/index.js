@@ -7,6 +7,8 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <p>Currated by Lee Burkhardt. For more information email</p>
+    <a href="mailto:yourneighborpgh@gmail.com">yourneighborpgh@gmail.com</a>
   </React.StrictMode>,
   document.getElementById('root')
 );
