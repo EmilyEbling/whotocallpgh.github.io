@@ -12,7 +12,7 @@ class ContentSection extends Component {
                             <Content 
                             name={contentData.name}
                             phone_link={contentData.phone_link}
-                            formated_phone={contentData.formated_phone}
+                            formatted_phone={contentData.formatted_phone}
                             website={contentData.website}
                             description={contentData.description}
                             tags={contentData.tags}>
