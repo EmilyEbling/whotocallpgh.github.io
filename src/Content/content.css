@@ -25,4 +25,10 @@
 
 .tags {
     text-align: left;
+    list-style: none;
+}
+
+ul li {
+    display: inline;
+    padding: 10px;
 }
