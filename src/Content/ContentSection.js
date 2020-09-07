@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import data from './content.json'
 import Content from './Content'
-import content from './Content';
 
 class ContentSection extends Component {
     render() {

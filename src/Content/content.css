@@ -1,9 +1,24 @@
 .Content {
-    width: 60%;
+    width: 75%;
     margin: 16px auto;
-    border: 1px solid #eee;
+    border: 2px solid #eee;
     box-shadow: 0 2px 3px #ccc;
-    padding: 16px;
+    padding: 1px;
     text-align: center;
 }
 
+.name{
+    color: #17191c;
+}
+
+.phone {
+
+}
+
+.website {
+
+}
+
+.description {
+    
+}
