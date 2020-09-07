@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Component} from 'react'
 import './content.css'
 import { AiFillClockCircle, AiFillPhone, AiFillHome, AiOutlineHome, AiFillHeart } from 'react-icons/ai'
 import { FaCity, FaClinicMedical, FaRegCommentAlt, FaRainbow, FaTree } from 'react-icons/fa'
