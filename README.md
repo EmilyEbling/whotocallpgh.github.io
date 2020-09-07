@@ -1,7 +1,7 @@
 # whotocallpgh.com
-A list of resources for the community of Pittsburgh. This list is not a complete/comprehensive list. One way to make police obsolete is to stop calling them. There are plenty of other more competent and compassionate services out there.
+A list of resources for the community of Pittsburgh.
 
-To add a new resource you can copy and paste the following and replace the bolded values with the values you want to include. Each value is optional, so if, for example, a resource does not have a website this is not something you'd have to include.
+To add a new resource you need to navigate to the ResourceData.js file. From there you can add a new resource "object" after the resource that is currently listed last. You must had a comma after the previous resource before adding your own (if lost, follow the format in the rest of the document). You can copy and paste the following at the end of the list and replace the bolded values with the values you want to include. Each value is optional, so if, for example, a resource does not have a website this is not something you'd have to include.
 
 {<br>
     "name": "**Name of Organization**",<br> 
