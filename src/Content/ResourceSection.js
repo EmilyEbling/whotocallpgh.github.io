@@ -32,7 +32,7 @@ class ContentSection extends Component {
                     <Resource
                         name={data.name}
                         phone_link={data.phone_link}
-                        formated_phone={data.formated_phone}
+                        formatted_phone={data.formatted_phone}
                         website={data.website}
                         description={data.description}
                         tags={data.tags}>
