@@ -41,6 +41,13 @@ class ContentSection extends Component {
             )
         })
 
+        if(Object.keys(test).length === 0 && this.state.search !== null){
+            test = 
+            <div>
+                No Results Found
+            </div>
+        }
+        
         return (
             <div>
                 <div>
