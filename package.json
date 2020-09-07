@@ -10,7 +10,9 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-icons": "^3.11.0",
-    "react-scripts": "3.4.3"
+    "react-multiselect-checkboxes": "^0.1.1",
+    "react-scripts": "3.4.3",
+    "react-select-box": "^3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

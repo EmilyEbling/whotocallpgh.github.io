@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import Resource from './Resource/Resource'
 import Resources from './ResourceData.js'
+import Filter from './Filter/Filter'
 import './resource_section.css'
 
-class ContentSection extends Component {
+class ResourceSection extends Component {
 
     constructor() {
         super();
@@ -18,7 +19,7 @@ class ContentSection extends Component {
     }
 
     render() {
-        var test = Resources.filter((data) => {
+        var result = Resources.filter((data) => {
             if (this.state.search == null)
                 return data
             else if (data.description.toLowerCase().includes(this.state.search.toLowerCase())
@@ -41,8 +42,8 @@ class ContentSection extends Component {
             )
         })
 
-        if(Object.keys(test).length === 0 && this.state.search !== null){
-            test = 
+        if(Object.keys(result).length === 0 && this.state.search !== null){
+            result = 
             <div>
                 No Results Found
             </div>
@@ -52,13 +53,14 @@ class ContentSection extends Component {
             <div>
                 <div>
                     <input className="search" type="text" placeholder="Search" onChange={(e) => this.searchSpace(e)}></input>
+                    <Filter></Filter>
                 </div>
                 <div>
-                    {test}
+                     {result}
                 </div>
             </div>
         )
     }
 }
 
-export default ContentSection;
+export default ResourceSection;
