@@ -14,7 +14,8 @@ class ContentSection extends Component {
                             phone_link={contentData.phone_link}
                             formated_phone={contentData.formated_phone}
                             website={contentData.website}
-                            description={contentData.description}>
+                            description={contentData.description}
+                            tags={contentData.tags}>
                             </Content>
                         </div>
                    );

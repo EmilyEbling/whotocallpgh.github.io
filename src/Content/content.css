@@ -1,24 +1,28 @@
 .Content {
     width: 75%;
     margin: 16px auto;
-    border: 2px solid #eee;
+    border: 1px solid #eee;
     box-shadow: 0 2px 3px #ccc;
-    padding: 1px;
+    padding: 15px;
     text-align: center;
 }
 
 .name{
-    color: #17191c;
+    color: #000;
 }
 
 .phone {
-
+    color: #354D8C;
 }
 
 .website {
-
+    color: #354D8C;
 }
 
 .description {
-    
+    color: #000;
+}
+
+.tags {
+    text-align: left;
 }

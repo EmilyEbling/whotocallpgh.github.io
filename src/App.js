@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="App">
       <ContentSection></ContentSection>
+      <p>Currated by Lee Burkhardt. For more information email <a href="mailto:yourneighborpgh@gmail.com">yourneighborpgh@gmail.com</a></p>
     </div>
   );
 }
