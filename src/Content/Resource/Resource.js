@@ -22,7 +22,7 @@ const resource = (props) => {
             <p className="description">{props.description}</p>
             <ul className="tags">
                 {list.map(listitem => (
-                    <p key={listitem}> <i className="icon">{AddIcons(listitem)}</i>{listitem}</p>
+                    <p key={listitem}>{AddIcons(listitem)}{listitem}</p>
                 ))}
             </ul>
         </div>

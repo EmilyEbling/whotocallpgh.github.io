@@ -22,14 +22,3 @@
 .description {
     color: #000;
 }
-
-.tags {
-    text-align: center;
-    list-style: none;
-    justify-content: center;
-}
-
-.icon {
-    display: flex;
-    justify-content: center;
-}
