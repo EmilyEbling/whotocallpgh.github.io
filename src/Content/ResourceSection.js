@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import Resource from './Resource/Resource'
-import Resources from './ResourceData.js'
-import Filter from './Filter/Filter'
+import Resources from './ResourceData'
+import groupedOptions from './FilterLabels'
+import Select from 'react-select'
 import './resource_section.css'
 
 class ResourceSection extends Component {
@@ -9,13 +10,19 @@ class ResourceSection extends Component {
     constructor() {
         super();
         this.state = {
-            search: ''
+            search: '',
+            selectedOption: null
         };
     }
 
     searchSpace = (event) => {
         let keyword = event.target.value;
         this.setState({ search: keyword })
+    }
+
+    handleChange = (selectedOption) => {
+        this.setState({ selectedOption });
+        console.log(`Option selected:`, selectedOption);
     }
 
     render() {
@@ -42,21 +49,26 @@ class ResourceSection extends Component {
             )
         })
 
-        if(Object.keys(result).length === 0 && this.state.search !== null){
-            result = 
-            <div>
-                No Results Found
-            </div>
+        if (Object.keys(result).length === 0 && this.state.search !== null) {
+            result = <h3>No Results Found</h3>
         }
         
         return (
             <div>
                 <div>
                     <input className="search" type="text" placeholder="Search" onChange={(e) => this.searchSpace(e)}></input>
-                    <Filter></Filter>
+                    <div className="Filter" >
+                        <Select
+                            className="select"
+                            onChange={this.handleChange}
+                            closeMenuOnSelect={false}
+                            options={groupedOptions}
+                            isMulti>
+                        </Select>
+                    </div>
                 </div>
                 <div>
-                     {result}
+                    {result}
                 </div>
             </div>
         )
