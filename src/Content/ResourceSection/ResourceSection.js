@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Resource from './Resource/Resource'
-import Resources from './ResourceData'
-import groupedOptions from './FilterLabels'
+import Resource from '../Resource/Resource'
+import Resources from '../Data/ResourceData'
+import groupedOptions from '../Data/FilterLabels'
 import Select from 'react-select'
 import './resource_section.css'
 
@@ -52,7 +52,7 @@ class ResourceSection extends Component {
         if (Object.keys(result).length === 0 && this.state.search !== null) {
             result = <h3>No Results Found</h3>
         }
-        
+
         return (
             <div>
                 <div>

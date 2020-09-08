@@ -18,7 +18,7 @@ const resource = (props) => {
             <h2 className="name">{props.name}</h2>
             <a className="phone" href={props.phone_link}>{props.formatted_phone}</a>
             <div><br></br></div>
-            <a className="website" href={props.website} target="_blank">{website}</a>
+            <a className="website" href={props.website} target="_blank" rel="noopener noreferrer">{website}</a>
             <p className="description">{props.description}</p>
             <ul className="tags">
                 {list.map(listitem => (
