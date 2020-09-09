@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import Resource from '../Resource/Resource'
 import Resources from '../Data/ResourceData'
-import groupedOptions from '../Data/FilterLabels'
-import Select from 'react-select'
+import { groupedOptions } from '../Data/FilterLabels'
+import Select, {components} from 'react-select'
 import './resource_section.css'
 
 class ResourceSection extends Component {
@@ -89,10 +89,12 @@ class ResourceSection extends Component {
                     <div className="Filter" >
                         <Select
                             className="select"
+                            placeholder="Filter"
                             onChange={this.handleChange}
                             closeMenuOnSelect={false}
                             options={groupedOptions}
-                            isMulti>
+                            isMulti
+                            components={{Option: CustomSelectOption}}>
                         </Select>
                     </div>
                 </div>
@@ -103,5 +105,13 @@ class ResourceSection extends Component {
         )
     }
 }
+
+const { Option } = components;
+const CustomSelectOption = (props) => (
+    <Option {...props}>
+      {props.data.icon}
+      {props.data.label}
+    </Option>
+);
 
 export default ResourceSection;

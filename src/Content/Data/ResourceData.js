@@ -16,11 +16,11 @@ const Resources = [
         "tags": ["Immediate", "24/7", "Pittsburgh", "Crisis", "Violence"]
     },
     {
-        "name": "Anti-Eviction Response Team",
+        "name": "Pittsburgh Union of Regional Renters",
         "phone_link": "tel:4124448497",
         "formatted_phone": "412-444-8497",
-        "website": "",
-        "description": "Pittsburgh union of regional renters",
+        "website": "https://pgh-urr.org/",
+        "description": "Anti-Eviction Response Team. Housing is a human right. If your landlord is trying to take it call this number.",
         "tags": ["Immediate", "24/7", "Pittsburgh", "Housing"]
     },
     {
@@ -28,7 +28,7 @@ const Resources = [
         "phone_link": "tel:18887968226",
         "formatted_phone": "1-888-796-8226",
         "website": "https://www.upmc.com/services/behavioral-health/resolve-crisis-services",
-        "description": "For all residents of Allegheny County",
+        "description": "For all residents of Allegheny County. \"Everyone experiences moments of crisis in life. You might be struggling with depression or substance abuse. Or maybe you’re overwhelmed by problems at work, feeling lonely, or having a conflict with a loved one. Whether your problem is large or small, talking with someone can help. Most of all, don’t wait for a problem to get out of control.\"",
         "tags": ["Immediate", "Pittsburgh", "24/7", "Crisis", "Mental Health", "Possible Police"]
     },
     {
@@ -68,15 +68,15 @@ const Resources = [
         "phone_link": "tel:211",
         "formatted_phone": "211",
         "website": "https://uwswpa.org/call-2-1-1/",
-        "description": "",
-        "tags": ["Immediate", "24/7", "Anyone"]
+        "description": "Highly trained 2‑1‑1 call specialists provide referrals to basic human needs resources, physical and mental health resources, employment support, support for older adults and persons with disabilites, youth and child care program, and regional disaster preparation",
+        "tags": ["Immediate", "24/7", "Anyone", "Youth", "Elders"]
     },
     {
         "name": "Substance Abuse and Mental Health Services Administration Helpline",
         "phone_link": "tel:18006624357",
         "formatted_phone": "1-800-662-4357",
         "website": "https://www.samhsa.gov/find-help/national-helpline",
-        "description": "\"confidential, free, 24-hour-a-day, 365-day-a-year, information service, in English and Spanish, for individuals and family members facing mental and/or substance use disorders. This service provides referrals to local treatment facilities, support groups, and community-based organizations. Callers can also order free publications and other information.\"",
+        "description": "\"Confidential, free, 24-hour-a-day, 365-day-a-year, information service, in English and Spanish, for individuals and family members facing mental and/or substance use disorders. This service provides referrals to local treatment facilities, support groups, and community-based organizations. Callers can also order free publications and other information.\"",
         "tags": ["Immediate", "Harm Reduction", "Mental Health"]
     },
     {
@@ -92,7 +92,7 @@ const Resources = [
         "phone_link": "tel:18664887386",
         "formatted_phone": "1-866-488-7386",
         "website": "https://www.thetrevorproject.org/",
-        "description": "You can also text START to 678678",
+        "description": "You can also text START to 678678. \"The Trevor Project is the leading national organization providing crisis intervention and suicide prevention services to lesbian, gay, bisexual, transgender, queer & questioning (LGBTQ) young people under 25.\"",
         "tags": ["Immediate", "24/7", "Crisis", "LGBTQ+"]
     },
     {
@@ -116,7 +116,7 @@ const Resources = [
         "phone_link": "",
         "formatted_phone": "",
         "website": "https://www.bigburgh.com/",
-        "description": "Mobile-optimized web site that pulls together services that can help the houseless or those at risk of becoming houseless in the city of Pittsburgh. Included are only services that are free, good, and welcoming to those without an address.",
+        "description": "\"Mobile-optimized web site that pulls together services that can help the houseless or those at risk of becoming houseless in the city of Pittsburgh. Included are only services that are free, good, and welcoming to those without an address.\"",
         "tags": ["Referral", "Pittsburgh", "Houseless", "Anyone"]
     },
     {
@@ -136,11 +136,11 @@ const Resources = [
         "tags": ["Immediate", "Pittsburgh", "Harm Reduction", "Medical", "Housing", "Houseless", "Referral"]
     },
     {
-        "name": "CentralOutreach.com",
+        "name": "Central Outreach",
         "phone_link": "sms:4123224151",
         "formatted_phone": "Text 412-322-4151",
         "website": "https://www.centraloutreach.com/",
-        "description": "lgbtqia competent healthcare. Primary Care, STI, HIV, HEP testing, HRT access and support. Harm reduction competent, rehab and recovery services. Pharmacy discounts.",
+        "description": "LGBTQIA competent healthcare. Primary Care, STI, HIV, HEP testing, HRT access and support. Harm reduction competent, rehab and recovery services. Pharmacy discounts.",
         "tags": ["Referral", "Pittsburgh", "Anyone", "Harm Reduction", "LGBTQ+", "Houseless", "Medical"]
     },
     {

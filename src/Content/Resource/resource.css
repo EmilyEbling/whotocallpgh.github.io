@@ -19,6 +19,17 @@
     color: #354D8C;
 }
 
-.description {
-    color: #000;
+.table {
+	display: table;
+    margin: 0 auto;
+}
+
+ul .icons {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+}
+
+ul .icons {
+    display: inline;
 }
