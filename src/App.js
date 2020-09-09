@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import ResourceSection from './Content/ResourceSection'
+import ResourceSection from './Content/ResourceSection/ResourceSection'
 
 function App() {
   return (
