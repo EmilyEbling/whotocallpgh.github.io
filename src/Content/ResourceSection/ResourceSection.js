@@ -25,49 +25,31 @@ class ResourceSection extends Component {
         //console.log(`Option selected: ${selectedOption}`);
     }
 
-    filtering() {
-        console.log(`num of checks: ${JSON.stringify(this.state.selectedOption.length)}`);
-        console.log(Object.entries(this.state.selectedOption).length);
+    filterByTag() {
+        // console.log(`num of checks: ${JSON.stringify(this.state.selectedOption.length)}`);
+        // console.log(Object.entries(this.state.selectedOption).length);
 
         if (this.state.selectedOption == null || Object.entries(this.state.selectedOption).length === 0) {
-            console.log(`empty`);
             return Resources;
         }
 
-        //console.log(`${Object.entries(this.state.selectedOption)}`);
+        var currentTags =[]
+        for (const x of this.state.selectedOption){
+            currentTags.push(x.value);
+        }
 
-        console.log(`filter: ${JSON.stringify(Object(this.state.selectedOption.value))}`);
-        console.log(`filter includes Immediate: ${this.state.selectedOption.value === "Immediate"}`);
-
-        var filtered = Resources.filter(data =>
-            data.tags.some(tag => this.state.selectedOption.value === tag)).map(data => {
-                return (
-                    <div key={data.name}>
-                        <Resource
-                            name={data.name}
-                            phone_link={data.phone_link}
-                            formatted_phone={data.formatted_phone}
-                            website={data.website}
-                            description={data.description}
-                            tags={data.tags}>
-                        </Resource>
-                    </div>
-                )
-            })
-
-        console.log(Object.entries(filtered).length);
-        return filtered;
+        return Resources.filter(data => currentTags.every(tag => data.tags.includes(tag)));
     }
 
     search(filtered) {
-        //console.log(filtered)
-        var result = Resources.filter((data) => {
+        console.log(`What Resources[0] looks like: ${JSON.stringify(Resources[0])}`)
+        console.log(`What filtered[0] looks like: ${JSON.stringify(filtered[0])}`);
+        var result = filtered.filter((data) => {
             if (data.description.toLowerCase().includes(this.state.search.toLowerCase())
                 || data.name.toLowerCase().includes(this.state.search.toLowerCase())
-                || data.tags.some(tag => tag.toLowerCase().includes(this.state.search.toLowerCase()))
-            ) {
+                || data.tags.some(tag => tag.toLowerCase().includes(this.state.search.toLowerCase())))
                 return data;
-            }
+            
             else if (this.state.search == null)
                 return data;
             else
@@ -93,10 +75,8 @@ class ResourceSection extends Component {
 
     render() {
 
-        var x = this.filtering()
-        console.log(`fek: ${x}`)
-
-        let display = this.search(Object.entries(x));
+        var x = this.filterByTag();
+        let display = this.search(x);
 
         if (Object.keys(display).length === 0 && this.state.search !== null) {
             display = <h3>No Results Found</h3>
