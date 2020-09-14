@@ -4,7 +4,7 @@ const Resources = [
         "phone_link": "tel:4126878005",
         "formatted_phone": "412-687-8005",
         "website": "https://www.wcspittsburgh.org/",
-        "description": "Emergency shelter for adults experiencing domestic violence and their children. Safe harbor that provides specialized care and support for survivors who have experienced all types of intimate partner violence from physical to emotional through Emergency Shelter, Legal Advocacy, a 24-Hour Hotline, Support Groups, and more.",
+        "description": "Emergency shelter for women experiencing domestic violence and their children. Safe harbor that provides specialized care and support for survivors who have experienced all types of intimate partner violence from physical to emotional through Emergency Shelter, Legal Advocacy, a 24-Hour Hotline, Support Groups, and more. *This resource may not be suitable for men and trans or gender-non confirming individuals*",
         "tags": ["Immediate", "24/7", "Pittsburgh", "Crisis", "Violence", "Housing", "Families", "Youth", "Houseless"]
     },
     {
